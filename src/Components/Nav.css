@@ -22,7 +22,7 @@
 
 .nav__logo{
     position: fixed;
-    left: 20px;
+    left: 30px;
     width: 80px;
     object-fit: contain;
     cursor: pointer;
@@ -30,7 +30,7 @@
 
 .nav__avatar{
     position: fixed;
-    right: 20px;
+    right: 30px;
     width: 30px;
     height: 30px;
     cursor: pointer;

@@ -9,11 +9,16 @@ const Banner = () => {
 
   useEffect(()=> {
     async function fetchData(){
-      const request = await axios.get(requests.fetchNetflixOriginals)
-      setMovie(
-        request.data.results[Math.floor(Math.random() * request.data.results.length - 1) ]
-      )
-      return request
+      try {
+        const request = await axios.get(requests.fetchNetflixOriginals)
+        setMovie(
+          request.data.results[Math.floor(Math.random() * request.data.results.length - 1) ]
+        )
+        return request
+      } catch {
+        alert("Для работы приложения потребуется использовать VPN")
+      }
+
     }
     fetchData()
   }, [])
@@ -32,7 +37,7 @@ const Banner = () => {
     >
   <div className="banner__contents">
     <h1 className="banner__title">
-      {movie?.name}
+      {movie?.name || movie?.title || movie?.original_name}
     </h1>
     <div className="banner__buttons">
       <button className='banner__button'>Play</button>
