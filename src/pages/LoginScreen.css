@@ -1,0 +1,96 @@
+.loginScreen{
+    position: relative;
+    height: 100%;
+    background: url("https://static.fanpage.it/wp-content/uploads/sites/25/2022/11/netflix_il_piano_di_abbonamento.jpg") center/cover no-repeat ;
+}
+
+.loginScreen__logo {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 150px;
+    object-fit: contain;
+    padding-left: 20px;
+}
+
+.loginScreen__btn {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
+}
+
+.loginScreen__gradient {
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4)
+    linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.4) 0,
+            rgba(0, 0, 0, 0) 60%,
+            rgba(0, 0, 0, 0.8) 100%
+    );
+}
+
+.loginScreen__body > h1{
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+
+.loginScreen__body > h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.loginScreen__body > h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.loginScreen__body {
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.loginScreen__input{
+    margin: 20px;
+}
+
+.loginScreen__input > form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 50px;
+}
+.loginScreen__input > form > input {
+    padding: 10px;
+    outline-width: 0;
+    height: 50px;
+    width: 30%;
+    border: none;
+    max-width: 600px;
+}
+
+.loginScreen__input__btn{
+    padding: 15px 20px;
+    font-size: 1rem;
+    border: none;
+    color: white;
+    background-color: #e50914;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 100%;
+}
