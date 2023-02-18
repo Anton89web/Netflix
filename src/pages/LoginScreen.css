@@ -63,6 +63,8 @@
     color: #fff;
     padding: 20px;
     text-align: center;
+    left: 0;
+    right: 0;
 }
 
 .loginScreen__input{
